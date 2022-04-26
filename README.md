@@ -1,4 +1,4 @@
-# A3Material (Cooming Soon)
+# A3Material (Coming Soon)
 Build responsive mobile website looks like Material Design! Based on W3.CSS by Jan Egil and Borge Refnes
 
 1.Responsive
