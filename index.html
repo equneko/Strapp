@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" style="width:100%; height:100%">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Alfajri Arraihan">
+
+    
+    <!-- W3 Core CSS -->
+    <link href="css/w3.css" rel="stylesheet">
+    <!-- WebFont Core CSS -->
+    <link href="css/webfont.css" rel="stylesheet">
+    <!-- Font Awesome Core CSS -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- Highlight Core CSS -->
+    <link href="css/highlight.css" rel="stylesheet">
+
+    <!-- Base Core CSS -->
+    <link href="css/index.css" rel="stylesheet">
+
+    <!-- Highlight Core Javascript -->
+  	<script src="js/highlight.min.js"></script>
+    <!-- Angular Core Javascript -->
+  	<script src="js/angular.min.js"></script>
+  	<!-- JQuery Core Javascript -->
+  	<script src="js/jquery.min.js"></script>
+
+    <!-- Base Core Javascript -->
+  	<script src="js/index.js"></script>
+
+
+  </head>
+
+  <body ng-app="app" ng-controller="data" style="width:100%; height:100%; background: -webkit-gradient(linear, left top, left bottom, from(#0868d4), to(#4a9eff)) fixed;">
+
+<!-- Navigation Bar -->
+    <div class="w3-top w3-white w3-card">
+      <div class="w3-bar">
+        <div class="w3-bar-item w3-left">
+          <a class="w3-button w3-hover-none" style="font-size: 21px;"><b>A3 Material</b></a>
+        </div>
+        
+        <div id="menubar" class="w3-bar-item w3-right">
+          <a class="menu w3-button w3-hover-none w3-hover-text-deep-blue" style="font-size: 19px;"><span class="fa fa-cog w3-text-deep-blue"></span> Component</a>
+          <a class="menu w3-button w3-hover-none w3-hover-text-deep-blue" style="font-size: 19px;"><span class="fa fa-th-large w3-text-orange"></span> Attribute</a>
+          <a class="menu w3-button w3-hover-none w3-hover-text-deep-blue" style="font-size: 19px;"><span class="fa fa-android w3-text-green"></span> Library</a>
+
+          <a class="download w3-button w3-hover-none w3-hover-text-deep-blue w3-margin-left" style="font-size: 21px;">
+            <span class="fa fa-download"></span>&emsp;<b>Download</b></a>
+          
+            <a onclick="openSidebar()" class="menuselect w3-button w3-hover-none w3-hover-text-deep-blue w3-hide" style="font-size: 21px;">
+              <span class="fa fa-bars"></span></a>
+        </div>
+      </div>
+    </div>
+
+ <!-- Side Bar -->
+    <div id="sidebar" class="w3-sidebar w3-bar-block w3-card-4 w3-white w3-animate-left" style="display:none; width:250px; left:0; z-index:4">
+      <div class="download w3-deep-blue" style="padding: 0.5rem 2rem 0.5rem 0.5rem; display:none">
+        <a class="w3-button w3-hover-none w3-hover-text-light-gray" style="font-size: 21px">
+          <span class="fa fa-download"></span>&emsp;<b>Download</b></a>
+      </div>
+
+      <div style="padding: 1rem 2rem 1rem 0.5rem">
+        <a class="menu w3-button w3-hover-none w3-hover-text-deep-blue" style="font-size: 19px;"><span class="fa fa-cog w3-text-deep-blue"></span> Component</a>
+          <div class="a-child w3-margin-left" ng-repeat="x in component">
+            <a class="w3-button w3-text-gray w3-hover-none w3-hover-text-blue" style="font-size: 15px;">{{x}}</a>
+          </div>
+        
+        <a class="menu w3-button w3-hover-none w3-hover-text-deep-blue" style="font-size: 19px;"><span class="fa fa-th-large w3-text-orange"></span> Attribute</a>
+          <div class="b-child w3-margin-left" ng-repeat="x in attribute">
+            <a class="w3-button w3-text-gray w3-hover-none w3-hover-text-blue" style="font-size: 15px;">{{x}}</a>
+          </div>
+
+        <a class="menu w3-button w3-hover-none w3-hover-text-deep-blue" style="font-size: 19px;"><span class="fa fa-android w3-text-green"></span> Library</a>
+          <div class="c-child w3-margin-left" ng-repeat="x in library">
+            <a class="w3-button w3-text-gray w3-hover-none w3-hover-text-blue" style="font-size: 15px;">{{x}}</a>
+          </div>
+      </div>  
+
+    </div>
+
+    <div id="overlay" onclick="closeSideBar()" class="w3-overlay w3-animate-opacity" style="cursor:pointer"></div>
+
+
+ <!-- Top Content -->
+    <div id="topcontent" class="w3-bar w3-auto w3-margin-bottom" style="position: relative; top: 17%;">
+      
+      <!-- Get Started -->
+      <div id="gstarted" class="w3-bar-item w3-center w3-margin-bottom">
+        <svg width="194" height="205" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+         <g class="layer">
+          <circle cx="97" cy="97.16361" fill="#000000" fill-opacity="0" id="svg_2" r="95.1636" stroke="#ffffff" stroke-linecap="null" stroke-linejoin="null" stroke-width="4"/>
+          <text fill="#ffffff" font-family="Sans-serif" font-size="24" font-style="italic" id="svg_5" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="0" text-anchor="middle" transform="matrix(7.32937 0 0 7.32937 -2652.16 -1566.99)" x="376.33647" xml:space="preserve" y="237.07029">3</text>
+          <line fill="none" fill-opacity="0" id="svg_3" stroke="#ffffff" stroke-linecap="null" stroke-linejoin="null" stroke-width="4" transform="rotate(-72.225 86.2995 103.481)" x1="144.81534" x2="27.78367" y1="32.29336" y2="174.66947"/>
+          <line fill="none" id="svg_4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="6" transform="rotate(172.515 36.3794 98.8541)" x1="46.81534" x2="25.94345" y1="28.78421" y2="168.92405"/>
+         </g>
+        </svg>
+        <p class="w3-text-light-gray w3-hide-small w3-large" style="font-size:1.3rem">Build responsive mobile website, looks like Material!<br/>
+          Based on <a style="text-decoration:none" href="#"><b>W3.CSS</b><a> by Jan Egil and Borge Refsnes</p>
+            <p class="w3-text-light-gray w3-hide-large w3-hide-medium w3-large" style="font-size:1.3rem">Build responsive mobile website, looks like Material!
+              Based on <a style="text-decoration:none" href="#"><b>W3.CSS</b><a> by Jan Egil and Borge Refsnes</p>
+    
+        <div class="w3-center" style="margin-top:3rem">
+          <div class="w3-bar">
+            <a class="w3-mobile w3-bar-item w3-card w3-button w3-white w3-text-deep-blue w3-round-xxlarge
+             w3-margin-right w3-margin-bottom w3-hover-light-gray w3-hover-text-blue" style="padding: 1rem 2.5rem"><b>GET STARTED</b></a>
+            <a class="w3-mobile w3-bar-item w3-button w3-border w3-border-light-gray w3-text-light-gray w3-round-xxlarge w3-hover-none 
+            w3-hover-border-white w3-hover-text-white" style="padding: 1rem 2.5rem">CHANGELOG</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!--- Code Example -->
+      <div id="cexample" class="w3-bar-item w3-card w3-center w3-round-medium w3-white">
+        <div style="padding: 12px 64px 8px 64px">
+          <h3 style="font-size: 1.5rem;"><b>Android Application Based on HTML</b></h3>
+          <span class="w3-text-gray"><b>Make It Simple With A3Material Library</b></span>
+        </div>
+        
+        <div class="w3-left-align w3-round-medium">
+          <pre style="padding:0; margin:0;"><code style="padding:0; margin:0; font-family: monospace;" 
+            class="w3-round-medium w3-leftbar w3-border-green">
+    public class MainActivity extends A3Material{
+
+      @Override
+      public void init(){
+        config("My App").theme(MATERIAL_LIGHT);
+        add(TEXT, "Hello World").center();
+      }
+
+    }
+          </code>
+          </pre>
+
+          <div class="w3-center">
+            <div class="w3-bar">
+              <a class="w3-mobile w3-bar-item w3-card w3-button w3-deep-blue w3-text-white w3-round-medium w3-padding-large w3-margin-bottom w3-margin-right w3-hover-text-light-gray w3-hover-deep-blue">
+                <span class="fa fa-play"></span>&emsp;<b>EXAMPLE APP</b></a>
+              <a class="w3-mobile w3-bar-item w3-button w3-white w3-border w3-border-gray w3-hover-border-light-blue w3-text w3-round-medium w3-padding-large w3-hover-none w3-hover-text-blue"><b>READ DOCUMENTATION</b></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script>
+      app = angular.module("app",[]);
+
+      app.controller("data",function($scope){
+        $scope.component = [
+          "Layout",
+          "ActionBar",
+          "MenuBar",
+          "NavigationDrawer",
+          "BottomNavigation",
+          "TabView",
+          "ListView",
+          "CardView",
+          "TextView",
+          "ProgressView",
+          "ImageView",
+          "Button",
+          "FloatingActionButton",
+          "EditText",
+          "InputField",
+          "CheckBox",
+          "SelectBox",
+          "AlertDialog",
+          "Toast"
+        ];
+
+        $scope.attribute = [
+          "Position",
+          "Size",
+          "Color",
+          "Gradient",
+          "Padding",
+          "Margin",
+          "Group",
+          "Adapter",
+          "Shadow",
+          "Display",
+          "Animation",
+        ];
+
+        $scope.library = [
+          "A3Material",
+          "A3AndroidApplication",
+          "A3ColorLibrary",
+          "W3.CSS",
+          "W3ColorLibrary"
+        ];
+      });
+
+      hljs.highlightAll();
+
+      function openSidebar(){
+        $("#sidebar").css("display","block");
+        $("#overlay").css("display","block");
+      }
+      function closeSideBar(){
+        $("#sidebar").css("display","none");
+        $("#overlay").css("display","none");
+      }
+    </script>
+  </body>
+</html>
