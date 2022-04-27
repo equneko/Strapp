@@ -50,7 +50,7 @@
           <a class="download w3-button w3-hover-none w3-hover-text-deep-blue w3-margin-left" style="font-size: 21px;">
             <span class="fa fa-download"></span>&emsp;<b>Download</b></a>
           
-            <a onclick="alert('Error')" class="menuselect w3-button w3-hover-none w3-hover-text-deep-blue w3-hide" style="font-size: 21px;">
+            <a onclick="openSideBar()" class="menuselect w3-button w3-hover-none w3-hover-text-deep-blue w3-hide" style="font-size: 21px;">
               <span class="fa fa-bars"></span></a>
         </div>
       </div>
@@ -98,7 +98,7 @@
     
         <div class="w3-center" style="margin-top:3rem">
           <div class="w3-bar">
-            <a onclick="openSideBar()" class="w3-mobile w3-bar-item w3-card w3-button w3-white w3-text-deep-blue w3-round-xxlarge
+            <a  class="w3-mobile w3-bar-item w3-card w3-button w3-white w3-text-deep-blue w3-round-xxlarge
              w3-margin-right w3-margin-bottom w3-hover-light-gray w3-hover-text-blue" style="padding: 1rem 2.5rem"><b>GET STARTED</b></a>
             <a class="w3-mobile w3-bar-item w3-button w3-border w3-border-light-gray w3-text-light-gray w3-round-xxlarge w3-hover-none 
             w3-hover-border-white w3-hover-text-white" style="padding: 1rem 2.5rem">CHANGELOG</a>
@@ -191,8 +191,8 @@
       });
 
       hljs.highlightAll();
-
-      function openSidebar(){
+      
+      function openSideBar(){
         $("#sidebar").css("display","block");
         $("#overlay").css("display","block");
       }
