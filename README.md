@@ -1,11 +1,9 @@
-# A3Material (Coming Soon)
-Build responsive mobile website looks like Material Design! Based on W3.CSS by Jan Egil and Borge Refnes
+# Strapp(Coming Soon)
+Build Android Application With Strapp
 
 1. Responsive<br/>
 2. Mobile Design<br/>
 3. Fast and Easy<br/>
-
-<img src="res/logo.png"/>
 
 This project's still in building proccess.
 Support me on github!
