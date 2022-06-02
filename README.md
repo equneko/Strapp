@@ -1,4 +1,4 @@
-# Strapp(Coming Soon)
+# Strapp (Coming Soon)
 Build Android Application With Strapp
 
 1. Responsive<br/>
